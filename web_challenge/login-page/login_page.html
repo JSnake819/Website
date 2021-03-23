@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Libre+Franklin:wght@400;700&family=Miriam+Libre:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login-page.css">
+    <title>JSnake: Enter your username and password</title>
+</head>
+<body>
+    <div class="grid-container">
+        <h2 class="title">Login</h2>
+        <h3 class="header"></h3>
+        <div class="input-container">
+        <div><input id="username-input" class="login-input" type="text" placeholder="Username"/></div>
+    <br/>
+        <div><input id="password-input" class="login-input" type="password" style="margin-bottom:15px;" placeholder="Password"/></div>
+    <br/>
+        <div><a id="login-button" href="../bubbysMom.html" role="button">Login</a></div>
+    <br/>
+        <div><p class="text">This website is undergoing developement. To request a beta account, click <a href="#" style="color: rgb(69, 131, 182)">here.</a></p></div>
+        <script>
+            function getLoginInfo() {
+                var username = document.getElementById("username-input").value;
+                var password = document.getElementById("password-input").value;
+                if (username == "JSnake" && password =="Jacob123$"){
+                    console.log("login succesful");
+                } else {
+                    console.log("login failed");
+                }
+            }
+        </script>
+    </div>
+    </div>
+</body>
+</html>

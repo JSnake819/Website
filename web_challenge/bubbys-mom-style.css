@@ -1,0 +1,129 @@
+body{
+    /* background: rgb(49, 49, 49); */
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 45s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.title-container{
+    height: 65px;
+    background-color: rgb(38, 38, 38);
+    margin: 0px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+.title{
+    color: rgb(69, 131, 182);
+    font-family: "Libre Franklin", sans-serif;
+    text-decoration:none;
+    font-weight: 400px;
+    font-size: 2em;
+    font-size: 40px;
+    transition: all .5s ease;
+    text-align: center;
+    height:65px;
+
+    margin-left:17%;
+    padding: 5px;
+    height:fit-content;
+    width:700px;
+}
+.title:visited{
+    color: rgb(69, 131, 182);
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 40px;
+    transition: all .5s ease;
+    text-align: center;
+    height:65px;
+
+    margin-left:17%;
+    padding: 5px;
+    height:fit-content;
+    width:700px;
+}
+.title:hover{
+    border-style: solid;
+    border-width: 3px;
+    border-color:rgba(114, 114, 114);
+}
+.account-link{
+    font-family: "Miriam Libre";
+    font-size: 20px;
+    color:rgb(179, 179, 179);
+    text-decoration: none;
+}
+a:visited{
+    color:rgb(179, 179, 179);
+    text-decoration: none;
+    font-family: "Miriam Libre";
+    font-size: 20px;
+}
+
+.flex-container{
+    background-color: rgba(68, 68, 68, .7);
+    height: 55px;
+    align-self: center;
+    margin: 5px 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.directory-item{
+    background-color: rgb(69, 131, 182);
+    font-family: "Miriam Libre", sans-serif;
+    font-size: 18px;
+    color: black;
+    
+    cursor: pointer;
+    padding: 7px 40px;
+    transition: all .5s ease;
+    text-decoration: none;
+    
+    border-radius: 4mm;
+    border-width: 0mm;
+    min-width: fit-content;
+}
+.directory-item:hover{
+    background-color: rgb(151, 208, 255);
+    padding: 15px 70px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.paragraph-container{
+    font-family: "Miriam Libre", sans-serif;
+    font-size: 25px;
+    color: rgb(179, 179, 179);
+    height:250px;
+    width: 40%;
+    margin: 100px 50px;
+}
+
+.paragraph-container+.divider-container{
+    width: 3%;
+    margin-left: 50px;
+}
+
+.row{
+    float:right;
+    margin-right:200px;
+}
+
+.end-page{
+    margin-top:200px;
+}
+
